@@ -1,29 +1,39 @@
 htmlelement.polyfills
 =====================
 
-#### Lightweight vanilla JavaScript Polyfills for the HTMLElement interface
+#### Lightweight vanilla JavaScript polyfills for the HTMLElement interface
 
-The htmlelement.polyfills library offers a lightweight, vanilla JavaScript implementation of some of the most frequently used DOM interactions.
+The htmlelement.polyfills library offers lightweight, vanilla JavaScript polyfills for some of the most frequently used DOM interactions on [`HTMLElement`](https://developer.mozilla.org/en/docs/Web/API/HTMLElement)\.
 
 ### Usage:
 
-Install the package via **NPM**:
+1.	Install the htmlelement.polyfills package
 
-```javascript
-npm install htmlelement.poyfills --save
-```
+	-	via **NPM**:
 
-or **Bower**:
+	```javascript
+	npm install htmlelement.polyfills --save
+	```
 
-```javascript
-bower install htmlelement.poyfills --save
-```
+	-	or **Bower**:
 
-Include the library to your application:
+	```javascript
+	bower install htmlelement.polyfills --save
+	```
 
-```html
-<script src="/node_modules/htmlelement.poyfills/dist/htmlelement.poyfills.min.js"></script>
-```
+2.	Include the library into your application:
+
+	-	if installed via **NPM** include from `node_modules`
+
+	```html
+	<script src="/node_modules/htmlelement.polyfills/dist/htmlelement.polyfills.min.js"></script>
+	```
+
+	-	if installed via **Bower** include from `bower_components`
+
+	```html
+	<script src="/bower_components/htmlelement.polyfills/dist/htmlelement.polyfills.min.js"></script>
+	```
 
 ### [Available Polyfills:](docs/API.md)
 
