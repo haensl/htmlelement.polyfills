@@ -1,3 +1,8 @@
+1.1.1
+-----
+
+-	Added version update gulp task
+
 1.0.1
 -----
 

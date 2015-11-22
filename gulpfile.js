@@ -44,5 +44,17 @@
       .pipe($.size());
   });
 
-  gulp.task('dist', ['jscs', 'clean', 'distribute']);
+  gulp.task('updateVersion', function(done) {
+    var fs = require('fs');
+    var version = fs.readSync(fs.openSync('RELEASE_NOTES.md', 'r'), 5, 0, 'utf8');
+    return gulp.src('package.json')
+      .pipe($.bump({
+        version: version[0]
+      }))
+      .pipe(gulp.dest('./'));
+  });
+
+  gulp.task('dist', function() {
+    runSequence('jscs', 'clean', 'updateVersion', 'distribute');
+  });
 })();

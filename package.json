@@ -1,12 +1,13 @@
 {
   "name": "htmlelement.polyfills",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "JavaScript Polyfills for the HTMLElement interface",
   "main": "dist/htmlelement.polyfills.min.js",
   "dependencies": {},
   "devDependencies": {
     "del": "^2.1.0",
     "gulp": "latest",
+    "gulp-bump": "^1.0.0",
     "gulp-jscs": "^3.0.2",
     "gulp-load-plugins": "^1.1.0",
     "gulp-rename": "^1.2.2",
