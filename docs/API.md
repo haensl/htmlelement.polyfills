@@ -90,11 +90,11 @@ root.appendChild(child);
 //      <div class="secondChildClass"></div>
 //    </div>
 //  </div>
-root.find('childClass'); // returns [child]
-root.find('secondChildClass'); // returns []
-root.find('secondChildClass', true); // returns [secondChild, anotherSecondChild]
-root.find('thirdChild'); // returns []
-root.find('thirdChild', true); // returns [thirdChild]
+root.find('.childClass'); // returns [child]
+root.find('.secondChildClass'); // returns []
+root.find('.secondChildClass', true); // returns [secondChild, anotherSecondChild]
+root.find('.thirdChild'); // returns []
+root.find('.thirdChild', true); // returns [thirdChild]
 ```
 
 **Returns** : `Array`
