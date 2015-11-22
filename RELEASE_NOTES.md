@@ -1,4 +1,10 @@
+1.1.3
+-----
+
+-	Fixed typos and extended usage instructions
+
 1.1.2
+-----
 
 -	Add usage notes and bower package
 
