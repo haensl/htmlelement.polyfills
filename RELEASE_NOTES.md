@@ -1,7 +1,12 @@
+1.1.5
+-----
+
+-	Made `HTMLElement.trigger()` use `TYPES` instead of magic strings
+
 1.1.4
 -----
 
--	Fixed find() API documentation
+-	Fixed `HTMLElement.find()` API documentation
 
 1.1.3
 -----
