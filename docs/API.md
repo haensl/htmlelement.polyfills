@@ -17,7 +17,6 @@ Available polyfills
 
 ### <a name="HTMLElement.addCLass"></a>`HTMLElement.addClass(className)`
 
-```
 Adds the given class to the element. Multiple classes must be separated by spaces.
 
 ```javascript
@@ -28,8 +27,6 @@ Adds the given class to the element. Multiple classes must be separated by space
 ```
 
 **className** : `string`
-
-```
 
 The class to add. Multiple classes must be separated by spaces.
 
