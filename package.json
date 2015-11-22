@@ -1,6 +1,6 @@
 {
   "name": "htmlelement.polyfills",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "JavaScript Polyfills for the HTMLElement interface",
   "main": "lib/htmlelement.polyfills.js",
   "dependencies": {},
