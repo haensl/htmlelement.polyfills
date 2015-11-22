@@ -1,3 +1,7 @@
+1.1.2
+
+-	Add usage notes and bower package
+
 1.1.1
 -----
 

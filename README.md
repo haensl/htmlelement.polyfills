@@ -5,6 +5,20 @@ htmlelement.polyfills
 
 The htmlelement.polyfills library offers a lightweight, vanilla JavaScript implementation of some of the most frequently used DOM interactions.
 
+### Usage:
+
+Install the package using NPM:
+
+```javascript
+npm install htmlelement.poyfills --save
+```
+
+Include the library to your application:
+
+```html
+<script src="/node_modules/htmlelement.poyfills/dist/htmlelement.poyfills.min.js"></script>
+```
+
 ### [Available Polyfills:](docs/API.md)
 
 -	[`HTMLElement.addClass(className)`](docs/API.md/#HTMLElement.addClass)
