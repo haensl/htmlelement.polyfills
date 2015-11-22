@@ -49,12 +49,12 @@ root.appendChild(child);
 //    </div>
 //  </div>
 secondChild.ancestor(); // returns child: <div class="firstOrderChild"></div>
-secondChild.ancestor('rootClass'); // returns root: <div class="rootClass"></div>
+secondChild.ancestor('.rootClass'); // returns root: <div class="rootClass"></div>
 ```
 
 **Returns** : `false` or `HTMLElement`
 
-The first of the element's ancestors that matches `selector` or the element's parent if no selector was supplied. If the element has no parent, e.g. is the root node, `false` is returned.
+The first of the element's ancestors that matches `selector` or the element's parent if either no selector was supplied or the selector does not match any ancestors. If the element has no parent, e.g. is the root node, `false` is returned.
 
 **selector** : `string` (optional)
 
