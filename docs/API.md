@@ -1,5 +1,7 @@
-htmlelement.polyfills API
-=========================
+<a name="top"></a>htmlelement.polyfills API
+===========================================
+
+[◀ Back to Overview](../README.md)
 
 Available polyfills
 -------------------
@@ -15,16 +17,19 @@ Available polyfills
 
 ### <a name="HTMLElement.addCLass"></a>`HTMLElement.addClass(className)`
 
+```
 Adds the given class to the element. Multiple classes must be separated by spaces.
 
 ```javascript
-var elem = document.createElement('div');
-elem.addClass('myClass myOtherClass');
-elem.hasClass('myClass'); // returns true
-elem.hasClass('myOtherClass'); // returns true
+  var elem = document.createElement('div');
+  elem.addClass('myClass myOtherClass');
+  elem.hasClass('myClass'); // returns true
+  elem.hasClass('myOtherClass'); // returns true
 ```
 
 **className** : `string`
+
+```
 
 The class to add. Multiple classes must be separated by spaces.
 
@@ -86,7 +91,8 @@ root.appendChild(child);
 //    </div>
 //  </div>
 root.find('childClass'); // returns [child]
-root.find('secondChildClass'); // returns [secondChild, anotherSecondChild]
+root.find('secondChildClass'); // returns []
+root.find('secondChildClass', true); // returns [secondChild, anotherSecondChild]
 root.find('thirdChild'); // returns []
 root.find('thirdChild', true); // returns [thirdChild]
 ```
@@ -187,3 +193,5 @@ elem.trigger('myEvent');
 // is equivalent to
 elem.trigger(new Event('myEvent'));
 ```
+
+[▲ Back to top](#top)

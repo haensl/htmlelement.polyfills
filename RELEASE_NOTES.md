@@ -1,3 +1,7 @@
+1.1.4
+
+-	Fixed find() API documentation
+
 1.1.3
 -----
 
