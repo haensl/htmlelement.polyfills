@@ -7,10 +7,16 @@ The htmlelement.polyfills library offers a lightweight, vanilla JavaScript imple
 
 ### Usage:
 
-Install the package using NPM:
+Install the package via **NPM**:
 
 ```javascript
 npm install htmlelement.poyfills --save
+```
+
+or **Bower**:
+
+```javascript
+bower install htmlelement.poyfills --save
 ```
 
 Include the library to your application:
