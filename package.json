@@ -1,0 +1,50 @@
+{
+  "name": "htmlelement.polyfills",
+  "version": "0.0.0",
+  "description": "JavaScript Polyfills for the HTMLElement interface",
+  "main": "lib/htmlelement.polyfills.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.1.0",
+    "gulp": "latest",
+    "gulp-jscs": "^3.0.2",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.0.0",
+    "gulp-uglify": "^1.5.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-opera-launcher": "^0.3.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-safari-launcher": "^0.1.1",
+    "phantomjs": "^1.9.18",
+    "run-sequence": "^1.1.5"
+  },
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haensl/htmlelement.polyfills.git"
+  },
+  "keywords": [
+    "JS",
+    "JavaScript",
+    "HTMLElement",
+    "Polyfills"
+  ],
+  "author": {
+    "name": "Hans-Peter Dietz",
+    "email": "h.p.dietz@gmail.com",
+    "twitter": "@h_p_d"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haensl/htmlelement.polyfills/issues"
+  },
+  "homepage": "https://github.com/haensl/htmlelement.polyfills#readme"
+}
