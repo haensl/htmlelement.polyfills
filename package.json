@@ -2,7 +2,7 @@
   "name": "htmlelement.polyfills",
   "version": "1.0.0",
   "description": "JavaScript Polyfills for the HTMLElement interface",
-  "main": "lib/htmlelement.polyfills.js",
+  "main": "dist/htmlelement.polyfills.min.js",
   "dependencies": {},
   "devDependencies": {
     "del": "^2.1.0",

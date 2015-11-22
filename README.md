@@ -7,14 +7,14 @@ The htmlelement.polyfills library offers a lightweight, vanilla JavaScript imple
 
 ### [Available Polyfills:](docs/API.md)
 
--	[`HTMLElement.addClass(className)`](docs/API/#HTMLElement.addClass)
--	[`HTMLElement.ancestor([selector])`](docs/API/#HTMLElement.ancestor)
--	[`HTMLElement.find(selector [, recursive])`](docs/API/#HTMLElement.find)
--	[`HTMLElement.hasClass(className)`](docs/API/#HTMLElement.hasClass)
--	[`HTMLElement.remove()`](docs/API/#HTMLElement.remove)
--	[`HTMLElement.removeClass(className)`](docs/API/#HTMLElement.removeClass)
--	[`HTMLElement.toggleClass(className)`](docs/API/#HTMLElement.toggleClass)
--	[`HTMLElement.trigger(event)`](docs/API/#HTMLElement.trigger)
+-	[`HTMLElement.addClass(className)`](docs/API.md/#HTMLElement.addClass)
+-	[`HTMLElement.ancestor([selector])`](docs/API.md/#HTMLElement.ancestor)
+-	[`HTMLElement.find(selector [, recursive])`](docs/API.md/#HTMLElement.find)
+-	[`HTMLElement.hasClass(className)`](docs/API.md/#HTMLElement.hasClass)
+-	[`HTMLElement.remove()`](docs/API.md/#HTMLElement.remove)
+-	[`HTMLElement.removeClass(className)`](docs/API.md/#HTMLElement.removeClass)
+-	[`HTMLElement.toggleClass(className)`](docs/API.md/#HTMLElement.toggleClass)
+-	[`HTMLElement.trigger(event)`](docs/API.md/#HTMLElement.trigger)
 
 License
 -------
