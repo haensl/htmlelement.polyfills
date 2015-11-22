@@ -16,6 +16,8 @@ The htmlelement.polyfills library offers a lightweight, vanilla JavaScript imple
 -	[`HTMLElement.toggleClass(className)`](docs/API.md/#HTMLElement.toggleClass)
 -	[`HTMLElement.trigger(event)`](docs/API.md/#HTMLElement.trigger)
 
+### [Release Notes](RELEASE_NOTES.md)
+
 License
 -------
 
