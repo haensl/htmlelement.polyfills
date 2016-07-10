@@ -6,15 +6,15 @@
 Available polyfills
 -------------------
 
--	[`HTMLElement.addClass(className)`](#HTMLElement.addClass)
--	[`HTMLElement.ancestor([selector])`](#HTMLElement.ancestor)
-->[`HTMLElement.empty()`](#HTMLElement.empty)
--	[`HTMLElement.find(selector [, recursive])`](#HTMLElement.find)
--	[`HTMLElement.hasClass(className)`](#HTMLElement.hasClass)
--	[`HTMLElement.remove()`](#HTMLElement.remove)
--	[`HTMLElement.removeClass(className)`](#HTMLElement.removeClass)
--	[`HTMLElement.toggleClass(className)`](#HTMLElement.toggleClass)
--	[`HTMLElement.trigger(event)`](#HTMLElement.trigger)
+- [`HTMLElement.addClass(className)`](#HTMLElement.addClass)
+- [`HTMLElement.ancestor([selector])`](#HTMLElement.ancestor)
+- [`HTMLElement.empty()`](#HTMLElement.empty)
+- [`HTMLElement.find(selector [, recursive])`](#HTMLElement.find)
+- [`HTMLElement.hasClass(className)`](#HTMLElement.hasClass)
+- [`HTMLElement.remove()`](#HTMLElement.remove)
+- [`HTMLElement.removeClass(className)`](#HTMLElement.removeClass)
+- [`HTMLElement.toggleClass(className)`](#HTMLElement.toggleClass)
+- [`HTMLElement.trigger(event)`](#HTMLElement.trigger)
 
 ### <a name="HTMLElement.addCLass"></a>`HTMLElement.addClass(className)`
 
