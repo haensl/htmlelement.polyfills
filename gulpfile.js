@@ -5,6 +5,7 @@
   var karma = require('karma');
   var $ = require('gulp-load-plugins')();
   var runSequence = require('run-sequence');
+  var VERSION;
 
   var startKarma = function(done) {
     new karma.Server({
@@ -24,7 +25,7 @@
 
   gulp.task('jscs', function(done) {
     return gulp.src(['lib/*.js', 'spec/*.js'])
-      .pipe($.jscs({fix: true}))
+      .pipe($.jscs({ fix: true }))
       .pipe($.jscs.reporter())
       .pipe($.jscs.reporter('fail'))
       .pipe($.size());
@@ -44,14 +45,39 @@
       .pipe($.size());
   });
 
+  var getVersion = function(callback) {
+    if (VERSION) {
+      callback(VERSION);
+    } else {
+      var rl = require('readline').createInterface({
+        input: require('fs').createReadStream('CHANGELOG.md')
+      });
+      rl.on('line', function(line) {
+        if (!VERSION) {
+          VERSION = line.trim();
+          rl.close();
+        }
+      });
+
+      rl.on('close', function() {
+        if (!VERSION) {
+          VERSION = '1.0.0';
+        }
+
+        callback(VERSION);
+      });
+    }
+  };
+
   gulp.task('updateVersion', function(done) {
-    var fs = require('fs');
-    var version = fs.readSync(fs.openSync('RELEASE_NOTES.md', 'r'), 5, 0, 'utf8');
-    return gulp.src('package.json')
-      .pipe($.bump({
-        version: version[0]
-      }))
-      .pipe(gulp.dest('./'));
+    getVersion(function(version) {
+      gulp.src('package.json')
+        .pipe($.bump({
+          version: version
+        }))
+        .pipe(gulp.dest('./'));
+      done();
+    });
   });
 
   gulp.task('dist', function() {
