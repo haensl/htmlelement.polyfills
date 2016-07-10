@@ -1,5 +1,18 @@
 {
   "preset": "airbnb",
   "disallowTrailingComma": true,
-  "requireTrailingComma": false
+  "requireTrailingComma": false,
+  "disallowSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+  },
+  "requireSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningCurlyBrace": true
+  },
+  "maximumLineLength": {
+    "value": 100,
+    "tabSize": 2,
+    "allExcept": [
+      "regex", "comments", "urlComments"
+    ]
+  }
 }

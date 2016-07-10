@@ -8,6 +8,7 @@ Available polyfills
 
 -	[`HTMLElement.addClass(className)`](#HTMLElement.addClass)
 -	[`HTMLElement.ancestor([selector])`](#HTMLElement.ancestor)
+->[`HTMLElement.empty()`](#HTMLElement.empty)
 -	[`HTMLElement.find(selector [, recursive])`](#HTMLElement.find)
 -	[`HTMLElement.hasClass(className)`](#HTMLElement.hasClass)
 -	[`HTMLElement.remove()`](#HTMLElement.remove)
@@ -59,6 +60,27 @@ The first of the element's ancestors that matches `selector` or the element's pa
 **selector** : `string` (optional)
 
 An optional selector to filter by.
+
+### <a name="HTMLElement.empty"></a>`HTMLElement.empty()`
+
+Removes all children from an element.
+
+```javascript
+var parent = document.createElement('div');
+var child1 = document.createElement('div');
+var child2 = document.createElement('div');
+
+parent.appendChild(child1);
+parent.appendChild(child2);
+// parent is now: <div>
+//                  <div></div>
+//                  <div></div>
+//                </div>
+// parent.children.length is now 2
+parent.empty();
+// parent is now: <div></div>
+// parent.children.length is now 0
+```
 
 ### <a name='HTMLElement.find'></a>`HTMLElement.find(selector [, recursive]) -> {Array}`
 
@@ -130,11 +152,20 @@ Removes the element from the DOM.
 
 ```javascript
 var parent = document.createElement('div');
-var child = document.createElement('div');
-parent.appendChild(child);
-// parent is now <div><div></div></div>
-child.remove();
-// parent is now <div></div>
+var child1 = document.createElement('div').addClass('child1');
+var child2 = document.createElement('div').addClass('child2');
+parent.appendChild(child1);
+parent.appendChild(child2)
+// parent is now <div>
+//                <div class="child1"></div>
+//                <div class="child2"></div>
+//              </div>
+// parent.children.length is now 2
+child1.remove();
+// parent is now <div>
+//                <div class="child2"></div>
+//               </div>
+// parent.children.length is now 1
 ```
 
 ### <a name="HTMLElement.removeClass"></a>`HTMLElement.removeClass(className)`

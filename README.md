@@ -40,14 +40,15 @@ The htmlelement.polyfills library offers lightweight, vanilla JavaScript polyfil
 
 ### [Available Polyfills:](docs/API.md)
 
--	[`HTMLElement.addClass(className)`](docs/API.md/#HTMLElement.addClass)
--	[`HTMLElement.ancestor([selector])`](docs/API.md/#HTMLElement.ancestor)
--	[`HTMLElement.find(selector [, recursive])`](docs/API.md/#HTMLElement.find)
--	[`HTMLElement.hasClass(className)`](docs/API.md/#HTMLElement.hasClass)
--	[`HTMLElement.remove()`](docs/API.md/#HTMLElement.remove)
--	[`HTMLElement.removeClass(className)`](docs/API.md/#HTMLElement.removeClass)
--	[`HTMLElement.toggleClass(className)`](docs/API.md/#HTMLElement.toggleClass)
--	[`HTMLElement.trigger(event)`](docs/API.md/#HTMLElement.trigger)
+- [`HTMLElement.addClass(className)`](docs/API.md/#HTMLElement.addClass)
+- [`HTMLElement.ancestor([selector])`](docs/API.md/#HTMLElement.ancestor)
+- [`HTMLElement.empty()`](docs/API.md/#HTMLElement.empty)
+- [`HTMLElement.find(selector [, recursive])`](docs/API.md/#HTMLElement.find)
+- [`HTMLElement.hasClass(className)`](docs/API.md/#HTMLElement.hasClass)
+- [`HTMLElement.remove()`](docs/API.md/#HTMLElement.remove)
+- [`HTMLElement.removeClass(className)`](docs/API.md/#HTMLElement.removeClass)
+- [`HTMLElement.toggleClass(className)`](docs/API.md/#HTMLElement.toggleClass)
+- [`HTMLElement.trigger(event)`](docs/API.md/#HTMLElement.trigger)
 
 ### [Release Notes](RELEASE_NOTES.md)
 
