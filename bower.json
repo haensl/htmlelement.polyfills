@@ -16,6 +16,7 @@
     "HTMLElement",
     "Polyfills"
   ],
+  "version": "1.2.0",
   "homepage": "https://github.com/haensl/htmlelement.polyfills",
   "moduleType": [
     "globals"
