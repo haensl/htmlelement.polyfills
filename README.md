@@ -50,10 +50,9 @@ The htmlelement.polyfills library offers lightweight, vanilla JavaScript polyfil
 - [`HTMLElement.toggleClass(className)`](docs/API.md/#HTMLElement.toggleClass)
 - [`HTMLElement.trigger(event)`](docs/API.md/#HTMLElement.trigger)
 
-### [Release Notes](RELEASE_NOTES.md)
+### [Changelog](CHANGELOG.md)
 
-License
--------
+### [License](LICENSE)
 
 The MIT License (MIT)
 
