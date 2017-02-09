@@ -1,3 +1,8 @@
+1.2.1
+-----
+
+- Fix link to changelog
+
 1.2.0
 -----
 
