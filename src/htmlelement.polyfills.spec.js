@@ -192,7 +192,7 @@
           var testClickCalled;
           beforeEach(function() {
             testClickCalled = false;
-            listener = function(event) {
+            listener = function() {
               testClickCalled = true;
             };
 

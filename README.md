@@ -3,6 +3,10 @@ htmlelement.polyfills
 
 [![NPM](https://nodei.co/npm/htmlelement.polyfills.png?downloads=true)](https://nodei.co/npm/htmlelement.polyfills/)
 
+[![npm version](https://badge.fury.io/js/htmlelement.polyfills.svg)](http://badge.fury.io/js/htmlelement.polyfills)
+[![Bower version](https://badge.fury.io/bo/htmlelement.polyfills.svg)](https://badge.fury.io/bo/htmlelement.polyfills)
+[![Build Status](https://travis-ci.org/haensl/htmlelement.polyfills.svg?branch=master)](https://travis-ci.org/haensl/htmlelement.polyfills)
+
 
 #### Lightweight vanilla JavaScript polyfills for the HTMLElement interface
 
