@@ -1,5 +1,7 @@
 ### 1.3.1
 * Fix installation instructions in readme
+* Update package.json & bower.json
+* Add npmignore
 
 ### 1.3.0
 * Add TravisCI

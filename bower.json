@@ -1,7 +1,7 @@
 {
   "name": "htmlelement.polyfills",
-  "description": "JavaScript Polyfills for the HTMLElement interface",
-  "main": "dist/htmlelement.polyfills.min.js",
+  "description": "Lightweight, vanilla JavaScript Polyfills for the HTMLElement interface.",
+  "main": "lib/htmlelement.polyfills.min.js",
   "authors": [
     {
       "name": "Hans-Peter Dietz",
@@ -16,18 +16,13 @@
     "HTMLElement",
     "Polyfills"
   ],
-  "version": "1.2.0",
   "homepage": "https://github.com/haensl/htmlelement.polyfills",
-  "moduleType": [
-    "globals"
-  ],
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "spec",
     ".*",
     "gulpfile.js",
-    "karma.conf.js"
+    "karma.conf.js",
+    "**/*.spec.js"
   ]
 }

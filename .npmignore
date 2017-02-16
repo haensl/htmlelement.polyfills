@@ -1,0 +1,4 @@
+.*
+**/*.spec.js
+karma.conf.js
+gulpfile.js
