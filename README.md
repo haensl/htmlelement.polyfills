@@ -33,13 +33,13 @@ The htmlelement.polyfills library offers lightweight, vanilla JavaScript polyfil
 	-	if installed via **NPM** include from `node_modules`
 
 	```html
-	<script src="/node_modules/htmlelement.polyfills/dist/htmlelement.polyfills.min.js"></script>
+	<script src="/node_modules/htmlelement.polyfills/lib/htmlelement.polyfills.min.js"></script>
 	```
 
 	-	if installed via **Bower** include from `bower_components`
 
 	```html
-	<script src="/bower_components/htmlelement.polyfills/dist/htmlelement.polyfills.min.js"></script>
+	<script src="/bower_components/htmlelement.polyfills/lib/htmlelement.polyfills.min.js"></script>
 	```
 
 ### [Available Polyfills:](docs/API.md)
