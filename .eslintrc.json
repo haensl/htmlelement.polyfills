@@ -3,14 +3,16 @@
     "browser": true,
     "es6": true,
     "node": true,
-    "jasmine": true
+    "jest": true,
+    "commonjs": true
   },
   "extends": "eslint:recommended",
   "parserOptions": {
+    "ecmaVersion": 9,
     "sourceType": "module"
   },
   "globals": {
-    "angular": true
+    "define": true
   },
   "rules": {
     "indent": [
@@ -28,6 +30,10 @@
     "semi": [
       "error",
       "always"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
     ]
  }
 }

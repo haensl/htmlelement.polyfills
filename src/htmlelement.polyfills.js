@@ -1,7 +1,5 @@
-(function() {
-  'use strict';
-
-  var TYPES = {
+export default () => {
+  const TYPES = {
     String: 'string',
     Function: 'function'
   };
@@ -45,7 +43,7 @@
       }
 
       if (typeof event === TYPES.String) {
-        var eventObj;
+        let eventObj;
         if (document.createEvent) {
           try {
             eventObj = new Event(event, { bubbles: true, cancelable: true });
@@ -81,8 +79,8 @@
         return;
       }
 
-      var classes = this.className.split(' ');
-      var idx = classes.indexOf(className);
+      const classes = this.className.split(' ');
+      const idx = classes.indexOf(className);
       if (idx > -1) {
         classes.splice(idx, 1);
       }
@@ -112,8 +110,8 @@
   if (!('addClass' in HTMLElement.prototype)) {
     HTMLElement.prototype.addClass = function(className) {
       if (typeof className === TYPES.String) {
-        var classNames = className.split(' ');
-        for (var i = 0, len = classNames.length; i < len; i++) {
+        const classNames = className.split(' ');
+        for (let i = 0, len = classNames.length; i < len; i++) {
           if (!this.hasClass(className)) {
             if (!this.className || this.className.length === 0) {
               this.className = className;
@@ -154,9 +152,9 @@
    */
   if (!('ancestor' in HTMLElement.prototype)) {
     HTMLElement.prototype.ancestor = function(selector) {
-      var matchesSelector = this.matches || this.webkitMatchesSelector ||
+      const matchesSelector = this.matches || this.webkitMatchesSelector ||
                             this.mozMatchesSelector || this.msMatchesSelector;
-      var elem = this.parentElement || false;
+      let elem = this.parentElement || false;
       if (!(selector && typeof selector === TYPES.String)) {
         return elem;
       }
@@ -182,17 +180,16 @@
    *  @return {Array}
    */
   if (!('find' in HTMLElement.prototype)) {
-    HTMLElement.prototype.find = function(selector, recursive) {
-      var results = [];
+    HTMLElement.prototype.find = function(selector, recursive = false) {
+      let results = [];
       if (!(selector && typeof selector === TYPES.String)) {
         return results;
       }
 
-      var matchesSelector = this.matches || this.webkitMatchesSelector ||
+      const matchesSelector = this.matches || this.webkitMatchesSelector ||
                             this.mozMatchesSelector || this.msMatchesSelector;
 
-      var elem;
-      for (var i = 0, len = this.childNodes.length; i < len; i++) {
+      for (let i = 0, len = this.childNodes.length, elem; i < len; i++) {
         elem = this.childNodes[i];
         if (elem.nodeType === Node.ELEMENT_NODE) {
           if (matchesSelector.bind(elem)(selector)) {
@@ -208,4 +205,4 @@
       return results;
     };
   }
-})();
+};
