@@ -111,7 +111,7 @@ export default () => {
     HTMLElement.prototype.addClass = function(className) {
       if (typeof className === TYPES.String) {
         const classNames = className.split(' ');
-        for (let i = 0, len = classNames.length; i < len; i++) {
+        for (let i = 0; i < classNames.length; i++) {
           if (!this.hasClass(className)) {
             if (!this.className || this.className.length === 0) {
               this.className = className;
@@ -152,8 +152,10 @@ export default () => {
    */
   if (!('ancestor' in HTMLElement.prototype)) {
     HTMLElement.prototype.ancestor = function(selector) {
-      const matchesSelector = this.matches || this.webkitMatchesSelector ||
-                            this.mozMatchesSelector || this.msMatchesSelector;
+      const matchesSelector = this.matches
+        || this.webkitMatchesSelector
+        || this.mozMatchesSelector
+        || this.msMatchesSelector;
       let elem = this.parentElement || false;
       if (!(selector && typeof selector === TYPES.String)) {
         return elem;
@@ -186,10 +188,12 @@ export default () => {
         return results;
       }
 
-      const matchesSelector = this.matches || this.webkitMatchesSelector ||
-                            this.mozMatchesSelector || this.msMatchesSelector;
+      const matchesSelector = this.matches
+        || this.webkitMatchesSelector
+        || this.mozMatchesSelector
+        || this.msMatchesSelector;
 
-      for (let i = 0, len = this.childNodes.length, elem; i < len; i++) {
+      for (let i = 0, elem; i < this.childNodes.length; i++) {
         elem = this.childNodes[i];
         if (elem.nodeType === Node.ELEMENT_NODE) {
           if (matchesSelector.bind(elem)(selector)) {
