@@ -1,3 +1,6 @@
+### 2.0.1
+* [#6: Integrate CI deployment.](https://github.com/haensl/htmlelement.polyfills/issues/6)
+
 ### 2.0.0
 * [#4: Port to ES6.](https://github.com/haensl/htmlelement.polyfills/issues/4)
 * [#5: Publish module.](https://github.com/haensl/htmlelement.polyfills/issues/5)
