@@ -1,4 +1,6 @@
 .*
 **/*.spec.js
-karma.conf.js
-gulpfile.js
+*.md
+jest.config.js
+rollup.*
+docs/

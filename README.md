@@ -4,7 +4,6 @@ htmlelement.polyfills
 [![NPM](https://nodei.co/npm/htmlelement.polyfills.png?downloads=true)](https://nodei.co/npm/htmlelement.polyfills/)
 
 [![npm version](https://badge.fury.io/js/htmlelement.polyfills.svg)](http://badge.fury.io/js/htmlelement.polyfills)
-[![Bower version](https://badge.fury.io/bo/htmlelement.polyfills.svg)](https://badge.fury.io/bo/htmlelement.polyfills)
 [![Build Status](https://travis-ci.org/haensl/htmlelement.polyfills.svg?branch=master)](https://travis-ci.org/haensl/htmlelement.polyfills)
 
 
@@ -14,33 +13,34 @@ The htmlelement.polyfills library offers lightweight, vanilla JavaScript polyfil
 
 ### Usage:
 
-1.	Install the htmlelement.polyfills package
+1. Install the htmlelement.polyfills package
 
-	-	via **NPM**:
+via **NPM**:
 
-	```javascript
-	npm install htmlelement.polyfills --save
-	```
+```javascript
+npm install htmlelement.polyfills --save
+```
 
-	-	or **Bower**:
+via **Yarn**:
 
-	```javascript
-	bower install htmlelement.polyfills --save
-	```
+```javascript
+yarn add htmlelement.polyfills
+```
 
-2.	Include the library into your application:
+2. Import and invoke the library in your application:
 
-	-	if installed via **NPM** include from `node_modules`
+ESM:
 
-	```html
-	<script src="/node_modules/htmlelement.polyfills/lib/htmlelement.polyfills.min.js"></script>
-	```
+```javascript
+import HTMLElementPolyfills from 'htmlelement.polyfills';
+HTMLElementPolyfills();
+```
 
-	-	if installed via **Bower** include from `bower_components`
+CommonJS:
+```javascript
+require('htmlelement.polyfills')();
+```
 
-	```html
-	<script src="/bower_components/htmlelement.polyfills/lib/htmlelement.polyfills.min.js"></script>
-	```
 
 ### [Available Polyfills:](docs/API.md)
 

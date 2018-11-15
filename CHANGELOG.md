@@ -1,3 +1,7 @@
+### 2.0.0
+* [#4: Port to ES6.](https://github.com/haensl/htmlelement.polyfills/issues/4)
+* [#5: Publish module.](https://github.com/haensl/htmlelement.polyfills/issues/5)
+
 ### 1.3.1
 * Fix installation instructions in readme
 * Update package.json & bower.json
