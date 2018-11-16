@@ -23,7 +23,7 @@
     "rollup-plugin-terser": "^3.0.0"
   },
   "scripts": {
-    "build": "rollup -c && node rollup.node",
+    "build": "npm i && rollup -c && node rollup.node",
     "test": "jest --env=jsdom",
     "tdd": "jest --env=jsdom --watch",
     "lint": "eslint -c .eslintrc.json **/*.js",
