@@ -1,6 +1,6 @@
 {
   "name": "htmlelement.polyfills",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Lightweight, vanilla JavaScript Polyfills for the HTMLElement interface.",
   "main": "lib/htmlelement.polyfills.node.js",
   "module": "lib/htmlelement.polyfills.esm.js",
