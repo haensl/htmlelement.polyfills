@@ -41,6 +41,8 @@ CommonJS:
 require('htmlelement.polyfills')();
 ```
 
+#### [Codepen Example](https://codepen.io/anon/pen/GPeVLV)
+
 
 ### [Available Polyfills:](docs/API.md)
 

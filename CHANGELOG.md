@@ -1,3 +1,6 @@
+### 2.0.2
+* [#9: Add Codepen example.](https://github.com/haensl/htmlelement.polyfills/issues/9)
+
 ### 2.0.1
 * [#6: Integrate CI deployment.](https://github.com/haensl/htmlelement.polyfills/issues/6)
 
