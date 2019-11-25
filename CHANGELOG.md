@@ -1,3 +1,6 @@
+### 2.0.3
+* [#11: Update dependencies.](https://github.com/haensl/htmlelement.polyfills/issues/11)
+
 ### 2.0.2
 * [#9: Add Codepen example.](https://github.com/haensl/htmlelement.polyfills/issues/9)
 
