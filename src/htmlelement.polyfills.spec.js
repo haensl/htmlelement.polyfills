@@ -246,7 +246,7 @@ describe('HTMLElement polyfills', () => {
           });
         });
 
-        describe('that selects the parent\s parent', () => {
+        describe('that selects the parents\' parent', () => {
           test('returns the parent\'s parent', () => {
             const secondChild = document.createElement('div');
             child.appendChild(secondChild);
