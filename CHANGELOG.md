@@ -1,3 +1,6 @@
+### 2.0.5
+* [#14: Update dependencies.](https://github.com/haensl/htmlelement.polyfills/issues/14)
+
 ### 2.0.4
 * Dependabot: Lift eslint major.
 
