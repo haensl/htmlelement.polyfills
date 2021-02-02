@@ -1,3 +1,6 @@
+### 2.0.6
+* [#16: Update dependencies.](https://github.com/haensl/htmlelement.polyfills/issues/16)
+
 ### 2.0.5
 * [#14: Update dependencies.](https://github.com/haensl/htmlelement.polyfills/issues/14)
 
