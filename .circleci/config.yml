@@ -238,7 +238,7 @@ jobs:
           name: create ESM test
           working_directory: /tmp/esm-test
           command: |
-            echo "import HTMLElementPolyfills from 'htmlelement.polyfills'; describe('htmlelement.polyfills', () => { it('exports a function', () => { expect(typeof polyfills).toEqual('function')})})" > src/polyfills.test.js
+            echo "import HTMLElementPolyfills from 'htmlelement.polyfills'; describe('htmlelement.polyfills', () => { it('exports a function', () => { expect(typeof HTMLElementPolyfills).toEqual('function')})})" > src/polyfills.test.js
       - run:
           name: test esm.js module
           working_directory: /tmp/esm-test
