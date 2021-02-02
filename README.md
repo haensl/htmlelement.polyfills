@@ -4,7 +4,7 @@ htmlelement.polyfills
 [![NPM](https://nodei.co/npm/htmlelement.polyfills.png?downloads=true)](https://nodei.co/npm/htmlelement.polyfills/)
 
 [![npm version](https://badge.fury.io/js/htmlelement.polyfills.svg)](http://badge.fury.io/js/htmlelement.polyfills)
-[![Build Status](https://travis-ci.org/haensl/htmlelement.polyfills.svg?branch=master)](https://travis-ci.org/haensl/htmlelement.polyfills)
+[![CircleCI](https://circleci.com/gh/haensl/htmlelement.polyfills.svg?style=svg)](https://circleci.com/gh/haensl/htmlelement.polyfills)
 
 
 #### Lightweight vanilla JavaScript polyfills for the HTMLElement interface
