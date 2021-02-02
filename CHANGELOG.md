@@ -1,3 +1,6 @@
+### 2.1.0
+* [#20: Migrate to CircleCI.](https://github.com/haensl/htmlelement.polyfills/issues/20)
+
 ### 2.0.6
 * [#16: Update dependencies.](https://github.com/haensl/htmlelement.polyfills/issues/16)
 

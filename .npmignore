@@ -1,6 +1,7 @@
 .*
-**/*.spec.js
 *.md
-jest.config.js
+*.tgz
 rollup.*
 docs/
+src/
+test-results/
