@@ -127,9 +127,13 @@ workflows:
       - package-test-esm-js:
           requires:
             - publish
+      - package-test-cjs-js:
+          requires:
+            - publish
       - publish-github-release:
           requires:
             - package-test-esm-js
+            - package-test-cjs-js
 
 jobs:
   lint:
@@ -296,37 +300,44 @@ jobs:
       - image: circleci/node:lts
     steps:
       - init
-      - attach_workspace:
-          at: ~/htmlelement.polyfills
       - run:
           name: create a test react app
           working_directory: /tmp
           command: |
-            npx create-react-app esm-test
-      - run:
-          name: install ResizeObserver polyfill
-          working_directory: /tmp/esm-test
-          command: |
-            npm i -S resize-observer-polyfill
+            npx create-react-app --use-npm esm-test
       - run:
           name: install module
           working_directory: /tmp/esm-test
           command: |
             npm i -S htmlelement.polyfills
       - run:
-          name: copy esm package test
+          name: create ESM test
           working_directory: /tmp/esm-test
           command: |
-            cp ~/htmlelement.polyfills/src/package-tests/esm/* ./src
+            echo "import HTMLElementPolyfills from 'htmlelement.polyfills'; describe('htmlelement.polyfills', () => { it('exports a function', () => { expect(typeof HTMLElementPolyfills).toEqual('function')})})" > src/polyfills.test.js
       - run:
           name: test esm.js module
           working_directory: /tmp/esm-test
           command: |
             npm test
-      - store_test_results:
-          working_directory: /tmp/esm-test
-          path: test-results
       - package-information
+
+  package-test-cjs-js:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - init
+      - create-test-project
+      - run:
+          name: install module
+          working_directory: /tmp/test-app
+          command: |
+            npm i -S htmlelement.polyfills
+      - run:
+          name: test cjs.js module
+          working_directory: /tmp/test-app
+          command: |
+            node -e "const polyfills = require('htmlelement.polyfills'); const assert = require('assert'); assert.deepEqual(typeof polyfills, 'function');"
 
   publish-github-release:
     docker:
