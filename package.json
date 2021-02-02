@@ -28,8 +28,7 @@
     "test:ci": "jest --runInBand --no-cache --ci --reporters='default' --reporters='jest-junit'",
     "tdd": "jest --watch",
     "lint": "eslint '**/*.js'",
-    "lint:ci": "eslint --format junit -o test-results/eslint/results.xml '**/*.js'",
-    "prepublishOnly": "npm run build"
+    "lint:ci": "eslint --format junit -o test-results/eslint/results.xml '**/*.js'"
   },
   "engines": {
     "node": "~6.9.4"
