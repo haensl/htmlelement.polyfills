@@ -10,8 +10,8 @@ export default () => {
    */
   if (!('remove' in HTMLElement.prototype)) {
     HTMLElement.prototype.remove = function() {
-      if (this && this.parentElement &&
-          HTMLElement.prototype.isPrototypeOf(this.parentElement)) {
+      if (this && this.parentElement
+        && Object.prototype.isPrototypeOf.call(HTMLElement.prototype, this.parentElement)) {
         this.parentElement.removeChild(this);
       }
     };
@@ -37,8 +37,9 @@ export default () => {
    */
   if (!('trigger' in HTMLElement.prototype)) {
     HTMLElement.prototype.trigger = function(event) {
-      if (!(typeof event === TYPES.String ||
-          Event.prototype.isPrototypeOf(event))) {
+      let _event = event;
+      if (!(typeof event === TYPES.String
+        || Object.prototype.isPrototypeOf.call(Event.prototype, event))) {
         return;
       }
 
@@ -46,24 +47,26 @@ export default () => {
         let eventObj;
         if (document.createEvent) {
           try {
-            eventObj = new Event(event, { bubbles: true, cancelable: true });
+            eventObj = new Event(event, {
+              bubbles: true,
+              cancelable: true
+            });
           } catch (e) {
             eventObj = document.createEvent('Event');
             eventObj.initEvent(event, true, true);
           }
-
         } else {
           eventObj = document.createEventObject();
           eventObj.eventType = event;
         }
 
-        event = eventObj;
+        _event = eventObj;
       }
 
       if (document.createEvent) {
-        this.dispatchEvent(event);
+        this.dispatchEvent(_event);
       } else {
-        this.fireEvent('on' + event.eventType, event);
+        this.fireEvent(`on${event.eventType}`, _event);
       }
     };
   }
@@ -116,7 +119,7 @@ export default () => {
             if (!this.className || this.className.length === 0) {
               this.className = className;
             } else {
-              this.className += ' ' + className;
+              this.className = `${this.className} ${className}`;
             }
           }
         }
