@@ -1,3 +1,7 @@
+### 2.1.4
+* [#35: Add funding information.](https://github.com/haensl/htmlelement.polyfills/issues/35)
+* Update dependencies.
+
 ### 2.1.3
 * [#33: Update dependencies.](https://github.com/haensl/htmlelement.polyfills/issues/33)
 
