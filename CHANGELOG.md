@@ -1,3 +1,6 @@
+### 2.1.6
+* [#39: Update dependencies.](https://github.com/haensl/htmlelement.polyfills/issues/39)
+
 ### 2.1.5
 * [#37: Fix ESM package test.](https://github.com/haensl/htmlelement.polyfills/issues/37)
 * Update dependencies.
