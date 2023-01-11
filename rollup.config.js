@@ -1,12 +1,12 @@
-import ascii from 'rollup-plugin-ascii';
-import node from '@rollup/plugin-node-resolve';
-import babel from '@rollup/plugin-babel';
-import { terser } from 'rollup-plugin-terser';
-import * as pkg from './package.json';
+const ascii = require('rollup-plugin-ascii');
+const node = require('@rollup/plugin-node-resolve');
+const babel = require('@rollup/plugin-babel');
+const terser = require('@rollup/plugin-terser');
+const pkg = require('./package.json');
 
 const copyright = `// ${pkg.homepage} v${pkg.version} Copyright ${(new Date()).getFullYear()} ${pkg.author.name}`;
 
-export default [
+module.exports = [
   {
     input: 'src/htmlelement.polyfills',
     plugins: [
